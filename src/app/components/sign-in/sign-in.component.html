@@ -1,0 +1,22 @@
+<header>
+    <button (click)=authService.SignOut()>Log out</button>
+</header>
+<main>
+    <div class="main">
+        <h1>
+            Sign In
+        </h1>
+        <input type="email" name="" #email required placeholder="Email">
+        <input type="password" #password required placeholder="Password">
+        <input type="button" value="Sign In" (click)="authService.SignIn(email.value, password.value)">
+        <div>
+            <h3>Log in with</h3>
+            <p>You can log in with your Google Account</p>
+            <button class="googleBtn" (click)="authService.GoogleAuth()">G</button>
+        </div>
+        <a href="">Forget your password?</a>
+    </div>
+</main>
+<footer>
+
+</footer>
